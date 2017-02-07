@@ -1,0 +1,298 @@
+@import 'normalize.css';
+@import 'font-awesome.min.css';
+@import 'bootstrap.min.css';
+@font-face{
+	font-family: "Roboto";
+	src: url("../fonts/roboto-regular.ttf"), 
+    url("../fonts/roboto-regular.svg"), 
+    url("../fonts/roboto-regular.eot"), 
+    url("../fonts/roboto-regular.woff"),
+    url("../fonts/roboto-regular.woff2");
+}
+@font-face{
+	font-family: "RobotoCondensed";
+	src: url("../fonts/robotocondensed-regular.ttf"), 
+    url("../fonts/robotocondensed-regular.svg"), 
+    url("../fonts/robotocondensed-regular.eot"), 
+    url("../fonts/robotocondensed-regular.woff"),
+    url("../fonts/robotocondensed-regular.woff2");
+}
+@font-face{
+	font-family: "Courgette";
+	src: url("../fonts/courgette-regular.ttf"), 
+    url("../fonts/courgette-regular.svg"), 
+    url("../fonts/courgette-regular.eot"), 
+    url("../fonts/courgette-regular.woff"),
+    url("../fonts/courgette-regular.woff2");
+}
+html,body{
+	font-family: "Roboto";
+	font-size: 16px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: "RobotoCondensed";
+}
+.text-condensed{
+	font-family: "RobotoCondensed";
+}
+.text-titles{
+	font-family: "Courgette";
+}
+.full-box{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.cover{
+	background-position: 50% 50%;
+	background-color: #E1E1E1;
+	background-size: cover;
+	background-repeat: no repeat;
+	background-attachment: fixed;
+}
+.section{
+	padding: 70px 0;
+}
+/*========== NavBar*/
+.NavBar,
+.NavBar-logo,
+.NavBar-navigation,
+.NavBar-logo figure,
+.NavBar-navigation li,
+.NavBar-navigation li a{
+	height: 60px;
+}
+.NavBar{
+	background-color: #fff;
+	border-bottom: 1px solid #E1E1E1;
+	position: relative;
+	z-index: 999;
+}
+.NavBar-logo,
+.NavBar-navigation{
+	position: absolute;
+	top: 0;
+}
+.NavBar-logo{
+	width: 30%;
+	left: 0;
+}
+.NavBar-logo figure img{
+	margin: 0 auto;
+	height: 50px;
+	padding-top: 5px;
+}
+.NavBar-navigation{
+	width: 70%;
+	color: #333;
+	right: 0;
+}
+.NavBar-navigation li{
+	display: inline-block;
+}
+.NavBar-navigation li a{
+	line-height: 60px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	padding: 0 5px;
+	transition: all .3s ease-in-out
+}
+.NavBar-navigation li a:hover{
+	color: #CA2128;
+}
+/*================ footer*/
+.footer{
+	padding: 60px 0 25px 0;
+	position: relative;
+	z-index: 10;
+	background-color: #fff;
+	border-top: 1px solid #E1E1E1;
+}
+.social-icons li{
+	display: inline-block;
+	margin: 4px;
+}
+.social-icons li a{
+	text-decoration: none;
+}
+.social-icons li a i{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	border-radius: 100%;
+	transition: all .3s ease-in-out;
+}
+.social-icons li a i:hover{
+	transform: scale(1.3);
+}
+/*================ index styles*/
+.icon-services{
+	font-size: 30px;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 100%;
+	color: #fff;
+	background-color: #D35400;
+	text-align: center;
+}
+.list-services li{
+	height: 30px;
+	text-align: center;
+	margin: 4px 0;
+}
+.section-lema{
+	background-image:url(../assets/img/coast.png);
+	background-position: left top;
+	position: relative;
+}
+.section-lema-bg{
+	height: 100%;
+	position: relative;
+	background-color: rgba(0,0,0,.5);
+	padding: 70px 0;
+}
+.section-lema-bg p{
+	font-size: 40px;
+	color: #fff;
+}
+.section-lema-bg img{
+	margin: 0 auto;
+}
+.section-a{
+	background-color: #009088;
+	color: #fff;
+}
+.section-a-container{
+	padding: 10px;
+}
+.section-a h2{
+	font-size: 50px;
+}
+.section-a p{
+	font-size: 14px;
+}
+.section-a-p{
+	color: #F5D800;
+	font-size: 25px !important;
+}
+/*================ services styles*/
+.section-services{
+	position: relative;
+	height: auto;
+}
+.section-services-content{
+	position: relative;
+	padding-right: 300px;
+}
+.section-services-content article{
+	padding: 50px 10px;
+}
+.section-services-nav{
+	height: 100%;
+	padding-top: 67px;
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	right: 0;
+	width: 300px;
+	border-left: 1px solid #E1E1E1;
+}
+.option-service{
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+	transition: all .3s ease-in-out;
+}
+.option-service:hover{
+	transform: scale(1.2);
+}
+.list-reme li,
+.list-colec li{
+	display: inline-block;
+}
+.list-colec li{
+	width: 180px;
+	height: 180px;
+	box-sizing: border-box;
+	border: 2px solid #E1E1E1;
+}
+/*================ Media Queries*/
+@media (max-width: 767px) {
+	.NavBar,
+	.NavBar-logo,
+	.NavBar-navigation,
+	.NavBar-logo figure,
+	.NavBar-navigation li,
+	.NavBar-navigation li a{
+		height: 50px;
+	}
+	.btn-mobile-menu{
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 25px;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+	}
+	.NavBar-logo,
+	.NavBar-navigation{
+		width: 100%;
+	}
+	.NavBar-logo figure img{
+		height: 40px;
+	}
+	.NavBar-navigation{
+		height: auto;
+		top: 50px;
+		z-index: 999;
+		background-color: #fff;
+		pointer-events: none;
+		opacity: 0;
+		transition: all .3s ease-in-out;
+		border-bottom: 1px solid #E1E1E1;
+	}
+	.show-menu-mobile{
+		pointer-events: auto;
+		opacity: 1;
+	}
+	.NavBar-navigation li{
+		display: block;
+	}
+	.NavBar-navigation li a{
+		line-height: 50px;
+	}
+	.section-lema-bg p{
+		font-size: 25px;
+	}
+	.section-a h2{
+		font-size: 30px;
+	}
+	.section-services-content{
+		padding-right: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 1200px) {
+
+}
